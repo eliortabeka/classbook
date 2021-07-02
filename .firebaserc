@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ngclassbook": {
+      "hosting": {
+        "classbox": [
+          "ngclassbook"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ngclassbook"
+  }
+}

@@ -1,0 +1,12 @@
+<div class="container">
+  <header>
+    <h1 routerLink="/">INT Classbook</h1>
+    <div>
+      <span>Hi {{ user?.displayName }}</span>
+      <button *ngIf="!user" (click)="login()">Login</button>
+      <button *ngIf="user" (click)="logout()">Logout</button>
+    </div>
+  </header>
+  <button routerLink="/add" *ngIf="user">Add new Student</button>
+  <router-outlet></router-outlet>
+</div>
